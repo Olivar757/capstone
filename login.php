@@ -18,7 +18,7 @@
             if(validate_login($username, $password) == 1){
                 $_SESSION["user"]=$username;
                 $_SESSION['loggedbool'] = "Account";
-                header("Location:home.php");
+                header("Location:index.php");
             }   
             else{
                 $err = "Your username or password does not match any accounts in our database.";
